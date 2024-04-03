@@ -1,0 +1,51 @@
+#wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 24px;
+}
+
+#algo-expert {
+  background-color: #626ee3;
+  width: 75%;
+  order: 3;
+  margin: auto;
+}
+
+#systems-expert {
+  background-color: #890023;
+  width: 50%;
+  order: 1;
+}
+
+#ml-expert {
+  background-color: #f37f1b;
+  width: 30%;
+  height: 75px;
+  order: 2;
+}
+
+#frontend-expert {
+  background-color: #11967e;
+  width: 40%;
+  order: 4;
+  align-self: flex-end;
+}
+
+#programming-expert {
+  background-color: #f21b3f;
+  width: calc(60% - 10px);
+  height: 75px;
+  order: 5;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+}
