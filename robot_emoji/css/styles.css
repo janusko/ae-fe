@@ -1,0 +1,112 @@
+.head {
+  --head-border-size: 5px;
+    
+  width: 150px;
+  height: 150px;
+  margin: 50px;
+  background-color: #a4d9eb;
+  border: var(--head-border-size) solid #9bbcc2;
+  border-radius: 20px;
+  position: relative;
+}
+
+.light {
+  --bulb-height: 30px;
+  --bulb-overlap: 5px;
+  --stick-height: 15px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc((var(--bulb-height) + var(--stick-height) + var(--head-border-size) - var(--bulb-overlap)) * -1);
+}
+
+.bulb {
+  width: var(--bulb-height);
+  height: var(--bulb-height);
+  border-radius: 50%;
+  background-color: #ffa500;
+  position: relative;
+  margin-bottom: calc(var(--bulb-overlap) * -1);
+  z-index: 1;
+}
+
+.stick {
+  width: 10px;
+  height: var(--stick-height);
+  background-color: #808080;
+}
+
+.ear {
+  --ear-width: 10px;
+  --ear-border-radius: 5px;
+  --ear-edge-offset: calc((var(--ear-width) + var(--head-border-size)) * -1);
+  
+  width: var(--ear-width);
+  height: 50px;
+  background-color: #c90a0a;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ear:first-child {
+  border-radius: var(--ear-border-radius) 0 0 var(--ear-border-radius);
+  left: var(--ear-edge-offset);
+}
+
+.ear:last-child {
+  border-radius: 0 var(--ear-border-radius) var(--ear-border-radius) 0;
+  right: var(--ear-edge-offset);
+}
+
+.eyes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 25px;
+}
+
+.eye {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  border: solid 5px #00b3ff;
+}
+
+.nose {
+  width: 0;
+  height: 0;
+  border-bottom: solid 30px #c90a0a;
+  border-right: solid 15px transparent;
+  border-left: solid 15px transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mouth {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+  height: 25px;
+  background-color: #dedede;
+  border: solid 1px black;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.tooth {
+  width: 5px;
+  height: 100%;
+  background-color: black;
+}
