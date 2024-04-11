@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #6e072d;
+  color: white;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  font-size: 18px;
+  padding: 18px 27px;
+  border-right: 2px solid white;
+}
+
+li:last-of-type {
+  border-right: none;
+}
+
+li:hover {
+  background-color: #b90e4d;
+}
