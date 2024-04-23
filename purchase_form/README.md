@@ -1,5 +1,5 @@
 * You're given an HTML file with the markup for a purchase form, similar to the actual purchase form on AlgoExpert
-* Using on;y CSS, style the purchase form to have the following characteristics:
+* Using only CSS, style the purchase form to have the following characteristics:
   * The #wrapper should have 12px of padding, a border radius of 12px, and a background color of #e0e0e0.
   * The ordered list should be styles as a stepper component:
     * This stepper should be horizontally centered with no padding, but it should maintain its default vertical margin.
